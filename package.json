@@ -1,7 +1,7 @@
 {
-  "name": "react-gtm-module",
-  "version": "2.0.11",
-  "description": "React Google Tag Manager Module",
+  "name": "react-server-side-gtm",
+  "version": "1.0.0",
+  "description": "React Google Tag Manager with Server Side Tagging Support",
   "main": "dist/index.js",
   "scripts": {
     "lint": "eslint .",
@@ -12,16 +12,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alinemorelli/react-gtm"
+    "url": "https://github.com/pieperz/react-server-side-gtm"
   },
   "author": {
-    "name": "Aline Morelli",
-    "email": "aline.morelliw@gmail.com",
-    "url": "https://github.com/alinemorelli"
+    "name": "James Pieper",
+    "email": "James@JamesPieper.com",
+    "url": "https://github.com/pieperz"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alinemorelli/react-gtm/issues"
+    "url": "https://github.com/pieperz/react-server-side-gtm/issues"
   },
   "homepage": "",
   "keywords": [
