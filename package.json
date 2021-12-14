@@ -1,6 +1,6 @@
 {
   "name": "react-server-side-gtm",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "React Google Tag Manager with Server Side Tagging Support",
   "main": "dist/index.js",
   "scripts": {
