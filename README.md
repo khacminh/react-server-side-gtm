@@ -5,7 +5,7 @@
 # react-server-side-gtm
 ### React Google Tag with server side support
 
-👋 This is a fork of `react-server-side-gtm` which has fallen behind on PR's and support for new GTM features. 
+👋 This is a fork of `react-gtm-module` which has fallen behind on PR's and support for new GTM features. 
 
 You can easily use server-side tagging, custom dataLayer, multiple dataLayers and additional events.
 
