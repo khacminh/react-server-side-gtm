@@ -1,4 +1,3 @@
-[![Build Status](https://img.shields.io/travis/alinemorelli/react-gtm/master.svg?style=flat-square)](https://travis-ci.org/alinemorelli/react-gtm)
 [![npm version](https://img.shields.io/npm/v/react-server-side-gtm.svg?style=flat-square)](https://www.npmjs.com/package/react-server-side-gtm)
 [![npm downloads](https://img.shields.io/npm/dm/react-server-side-gtm.svg?style=flat-square)](https://www.npmjs.com/package/react-server-side-gtm)
 
