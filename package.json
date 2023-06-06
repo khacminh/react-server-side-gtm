@@ -1,6 +1,6 @@
 {
   "name": "react-server-side-gtm",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "description": "React Google Tag Manager with Server Side Tagging Support",
   "main": "dist/index.js",
   "scripts": {
@@ -12,16 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pieperz/react-server-side-gtm"
+    "url": "https://github.com/khacminh/react-server-side-gtm.git"
   },
   "author": {
-    "name": "James Pieper",
-    "email": "James@JamesPieper.com",
-    "url": "https://github.com/pieperz"
+    "name": "Minh Ho",
+    "url": "https://github.com/khacminh"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pieperz/react-server-side-gtm/issues"
+    "url": "https://github.com/khacminh/react-server-side-gtm.git/issues"
   },
   "homepage": "",
   "keywords": [
