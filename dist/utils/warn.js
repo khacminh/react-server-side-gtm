@@ -1,10 +1,1 @@
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var warn = function warn(s) {
-  console.warn('[react-gtm]', s);
-};
-
-exports.default = warn;
+'use strict';Object.defineProperty(exports,'__esModule',{value:!0});var warn=function(a){console.warn('[react-gtm]',a)};exports.default=warn;
