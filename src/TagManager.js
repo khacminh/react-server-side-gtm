@@ -70,8 +70,8 @@ const TagManager = {
     if (dataLayer) {
       document.head.appendChild(gtm.dataScript);
     }
-    gtm.scripts.map(x => { document.head.insertBefore(x, document.head.childNodes[0]) });
-    gtm.noScripts.map(x => { document.body.insertBefore(x, document.body.childNodes[0]) });
+    gtm.scripts.forEach(x => { document.head.insertBefore(x, document.head.childNodes[0]) });
+    gtm.noScripts.forEach(x => { document.body.insertBefore(x, document.body.childNodes[0]) });
     // document.head.insertBefore(gtm.script(), document.head.childNodes[0])
     // document.body.insertBefore(gtm.noScript(), document.body.childNodes[0])
   },

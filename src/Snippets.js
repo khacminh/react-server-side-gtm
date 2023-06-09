@@ -51,7 +51,8 @@ function createIdleScript(reportInterval = 15000, idleInteval = 5000) {
         if (!idleReport && timeEngaged > 0 && timeEngaged < 3600000) {
           window.dataLayer.push({
             'event': 'nonIdle',
-            'nonIdleTimeElapsed': timeEngaged
+            activeSession: 1
+            // 'nonIdleTimeElapsed': timeEngaged
           });
         }
         if (idle) {
@@ -89,7 +90,6 @@ const Snippets = {
     const gtm_preview = preview ? `&gtm_preview=${preview}` : '';
     const gtm_cookies_win = auth || preview ? '&gtm_cookies_win=x' : '';
     const serverSideQuery = `${gtm_auth}${gtm_preview}${gtm_cookies_win}`;
-    const serverSideQueryForScript = serverSideQuery ? `+${serverSideQuery}` : '';
 
     const gtm_src = src
     const iframeSrc = htmlDir ? `${gtm_src}/${htmlDir}` : gtm_src;
@@ -116,11 +116,11 @@ const Snippets = {
       (function(w,d,s,l,i){w[l]=w[l]||[];
         w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js', ${JSON.stringify(events).slice(1, -1)}});
         var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-        j.async=true;j.src='${jsSrc}/gtm.js?id='+i+dl'${serverSideQueryForScript}';
+        j.async=true;j.src='${jsSrc}/gtm.js?id='+i+dl+'${serverSideQuery}';
         f.parentNode.insertBefore(j,f);
       })(window,document,'script','${dataLayerName}','${id}');`
 
-    const activeScripts = createIdleScript(reportInterval, idleInteval);
+    const activeScript = createIdleScript(reportInterval, idleInteval);
     const dataLayerVar = this.dataLayer(dataLayer, dataLayerName)
 
     return {
@@ -128,7 +128,7 @@ const Snippets = {
       // script,
       // activeScripts,
       noScripts: [iframe],
-      scripts: [script, activeScripts],
+      scripts: [script, activeScript],
       dataLayerVar
     }
   },
