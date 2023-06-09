@@ -71,7 +71,7 @@ function createIdleScript(reportInterval = 15000, idleInteval = 5000) {
       addListener('mousedown', pulse);
       addListener('keydown', pulse);
       addListener('scroll', pulse);
-      addListener('mousemove', pulse);
+      // addListener('mousemove', pulse);
       addListener('beforeunload', report);
       idleTimer = window.setTimeout(setIdle, ${idleInteval});
       reportTimer = window.setTimeout(report, ${reportInterval});
