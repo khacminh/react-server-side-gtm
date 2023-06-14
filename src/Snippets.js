@@ -48,7 +48,8 @@ function createIdleScript(reportInterval = 15000, idleInteval = 5000) {
         }
 
         // Push the payload to dataLayer, and only push valid time values
-        if (!idleReport && timeEngaged > 0 && timeEngaged < 3600000) {
+        // only push if active >7/15s
+        if (!idleReport && timeEngaged > 7000 && timeEngaged < 3600000) {
           window.dataLayer.push({
             'event': 'nonIdle',
             activeSession: 1
